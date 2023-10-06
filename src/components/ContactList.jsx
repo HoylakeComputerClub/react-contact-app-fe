@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 
@@ -9,6 +9,11 @@ function ContactList() {
         {id: 3, name: "Jim Smith", email: "jim@smith.com"},
         {id: 4, name: "Bob Doe", email: "bob@doe.com"}
     ]);
+
+    useEffect(() => {
+        console.log("Running the use effect...")
+        console.log('TODO: fetch data from the backend and use the setContacts to set the state')
+    }, []);
 
     return (
         <div>
