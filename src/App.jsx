@@ -1,11 +1,16 @@
+import ContactList from './components/ContactList'
+import AddContact from './components/AddContact'
+import EditContact from './components/EditContact'
 import './App.css'
 
 function App() {
 
   return (
-    <dev className='app'>
-     <h1>time2code</h1>
-    </dev>
+    <div className='app'>
+      <ContactList />
+      <AddContact />
+      <EditContact />
+    </div>
   )
 }
 
