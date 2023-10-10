@@ -14,7 +14,7 @@ function EditContact() {
     // TODO: create a useEffect to pull the contact by id
     useEffect(() => {
       // Use an effect to load the contact by id
-      fetch(`http://localhost:3000/contacts/${id}`)
+      fetch(`${import.meta.env['VITE_SERVER_URI']}/contacts/${id}`)
           .then(response => response.json())
           .then(data => {
               setName(data.name);
@@ -26,7 +26,7 @@ function EditContact() {
   // TODO: Create a handleEditContact and add it to the form
   const handleEditContact = async () => {
     try {
-        const response = await fetch(`http://localhost:3000/contacts/${id}`, {
+        const response = await fetch(`${import.meta.env['VITE_SERVER_URI']}/contacts/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',

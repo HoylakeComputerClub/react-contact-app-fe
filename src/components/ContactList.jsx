@@ -8,7 +8,7 @@ function ContactList() {
         console.log("Running the use effect...");
         
         // Make a GET request to fetch contacts from the backend
-        fetch('http://localhost:3000/contacts')
+        fetch(`${import.meta.env['VITE_SERVER_URI']}/contacts`)
             .then(response => response.json())
             .then(data => {
                 setContacts(data); // Update state with fetched data
