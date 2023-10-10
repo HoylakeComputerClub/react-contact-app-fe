@@ -1,5 +1,6 @@
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+import './AddContact.css'
 
 function AddContact() {
   // State variables for name and email
@@ -35,7 +36,7 @@ function AddContact() {
   };
 
   return (
-    <div>
+    <div className='add-contact'>
       <h2>Add Contact</h2>
       <form>
         <div>

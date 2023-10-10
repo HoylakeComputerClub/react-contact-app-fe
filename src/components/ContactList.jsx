@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import 'ContactList.css'
 
 function ContactList() {
     const [contacts, setContacts] = useState([]);
@@ -17,7 +18,7 @@ function ContactList() {
     }, []);
 
     return (
-        <div>
+        <div className='contact-list'>
             <h2>Contacts</h2>
             <ul>
                 {contacts.map((contact) => (
