@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import 'ContactList.css'
+import './ContactList.css'
 
 function ContactList() {
     const [contacts, setContacts] = useState([]);

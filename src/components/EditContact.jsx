@@ -1,7 +1,7 @@
 // will need to import useEffect, useState, useNavigate and useParams
 import  { useEffect, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
-import 'EditContact.css'
+import './EditContact.css'
 
 function EditContact() {
     // get the id from the params
