@@ -10,17 +10,19 @@ function App() {
   return (
     <Router>
       <div className='app'>
-      <h1>Contact Manager</h1>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Contacts</Link>
-            </li>
-            <li>
-              <Link to="/add">Add Contact</Link>
-            </li>
-          </ul>
-        </nav>
+        <header>
+        <h1>Contact Manager</h1>
+          <nav>
+            <ul>
+              <li>
+                <Link to="/">Contacts</Link>
+              </li>
+              <li>
+                <Link to="/add">Add Contact</Link>
+              </li>
+            </ul>
+          </nav>
+        </header>
         <Routes>
           <Route path="/" element={<ContactList />} />
           <Route path="/add" element={<AddContact />} />
