@@ -35,8 +35,9 @@ cd react-contacts
 ```bash
 npm install
 ```
+4. make a new file `.env` in the case directory of the project and copy the `.env-example` content inside it
 
-4. Start the development server
+5. Start the development server
 ```bash
 npm run dev
 ```
