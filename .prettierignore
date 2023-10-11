@@ -1,4 +1,5 @@
 .vscode
+.github
 build
 vite.config.js
 .eslintrc.cjs
