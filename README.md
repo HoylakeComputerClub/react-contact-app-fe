@@ -27,20 +27,25 @@ git clone https://github.com/HoylakeComputerClub/react-contacts.git
 ```
 
 2. Navigate to the project directory
+
 ```bash
 cd react-contacts
 ```
 
 3. install the project dependencise
+
 ```bash
 npm install
 ```
+
 4. make a new file `.env` in the case directory of the project and copy the `.env-example` content inside it
 
 5. Start the development server
+
 ```bash
 npm run dev
 ```
+
 ## Usage
 
 ### Home
@@ -81,6 +86,7 @@ npm run dev
 ## Folder Structure
 
 The project folder structure is as follows:
+
 ```
 src/
   App.jsx
@@ -91,15 +97,14 @@ components/
   ContactList.jsx
 ```
 
-
 - `ContactList.jsx`: Displays the list of contacts.
 - `AddContact.jsx`: Allows for creating contacts.
 - `EditContact.jsx`: Allows for updating contacts.
 - `App.jsx`: The main application component that sets up the React Router routes and manages contact data.
 
 ## Contributing
-The information about making contributions is inside the [contributiong](CONTRIBUTIONG.md) file
 
+The information about making contributions is inside the [contributiong](CONTRIBUTIONG.md) file
 
 ## License
 

@@ -1,0 +1,4 @@
+.vscode
+build
+vite.config.js
+.eslintrc.cjs

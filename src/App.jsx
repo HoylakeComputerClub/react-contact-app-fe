@@ -1,17 +1,16 @@
-import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 
-import ContactList from './components/ContactList'
-import AddContact from './components/AddContact'
-import EditContact from './components/EditContact'
-import './App.css'
+import ContactList from "./components/ContactList";
+import AddContact from "./components/AddContact";
+import EditContact from "./components/EditContact";
+import "./App.css";
 
 function App() {
-
   return (
     <Router>
-      <div className='app'>
+      <div className="app">
         <header>
-        <h1>Contact Manager</h1>
+          <h1>Contact Manager</h1>
           <nav>
             <ul>
               <li>
@@ -26,11 +25,11 @@ function App() {
         <Routes>
           <Route path="/" element={<ContactList />} />
           <Route path="/add" element={<AddContact />} />
-          <Route path="/edit/:id" element={<EditContact />} /> 
+          <Route path="/edit/:id" element={<EditContact />} />
         </Routes>
       </div>
     </Router>
-  )
+  );
 }
 
-export default App
+export default App;
